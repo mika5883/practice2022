@@ -16,6 +16,8 @@ with open('sample.csv') as f:
         if new_arr[2] < 250: 
             overall.append(new_arr)
 np_overall = np.asarray(overall)
+
+
 np.savetxt('output.txt', np_overall, fmt='%.2f', delimiter='\t')
 
 
