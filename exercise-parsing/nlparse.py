@@ -172,7 +172,7 @@ N = (word('fox') | word('wolf') | word('ant') | word('table')) @ 'N'
 Adj = (word('quick') | word('brown') | word('table') | word('caught') |
        word('adorable')) @ 'Adj'
 Compl = (word('a') | word('an') | word('the')) @ 'Compl'
-V = (word('jump') | word('jumped') | word('caught')) @ 'V'
+V = (word('jump') | word('jumps') | word('jumped') | word('caught')) @ 'V'
 
 class FilterValidArticle(FilterParser):
     """Подкласс FilterParser, который обеспечивает выбор корректного артикля"""
